@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer> </script>
+    <title>Student Profile System</title>
+</head>
+
+<body>
+    <h1 id="first">REGISTRATION FORM</h1>
+    <div class="container center">
+        <table>
+            <tr>
+                <td>
+                    <form class="input-part" autocomplete="off" onsubmit="onFormSubmit()">
+                        <div>
+                            <label>NAME:</label>
+                            <label class="validation-error hide" id="fullNameValidationError"></label>
+                            <input type="text" name="fullName" id="fullName">
+                        </div>
+                        <div>
+                            <label>DATE OF BIRTH:</label>
+                            <input type="text" name="dob" id="dob">
+                        </div>
+                        <div>
+                            <label>GENDER:</label>
+                            <input type="text" name="gender" id="gender">
+                        </div>
+                        <div>
+                            <label>ADDRESS:</label>
+                            <input type="text" name="add" id="add">
+                        </div>
+                        <div>
+                            <label>CITY:</label>
+                            <input type="text" name="city" id="city">
+                        </div>
+                        <div>
+                            <label>MOBILE NO.:</label>
+                            <input type="text" name="mobile" id="mobile">
+                        </div>
+                        <div>
+                            <label>EMAIL:</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div>
+                            <label>COURSE:</label>
+                            <input type="text" name="course" id="course">
+                        </div>
+
+                        <div class="form-action-buttons">
+                            <input type="submit" value="REGISTER">
+                        </div>
+
+                    </form>
+
+                <td>
+                    <table class="list" id="studentList">
+                        <thead>
+                            <h1 id="second">     Student Details</h1>
+                            <tr>
+                                <th>NAME </th>
+                                <th>DATE OF BIRTH </th>
+                                <th>GENDER </th>
+                                <th>ADDRESS </th>
+                                <th>CITY </th>
+                                <th>MOBILE </th>
+                                <th>EMAIL </th>
+                                <th>COURSE </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
